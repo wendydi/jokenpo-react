@@ -1,0 +1,86 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+  --primary: #7633b6;
+  --primary-dark: #502b72;
+  --primary-light: #bd7ef7;
+  --primary-text:rgba(255, 255, 255, 0.871);
+
+}
+
+.card {
+  display: grid;
+  grid-template-columns: auto auto;
+}
+
+.score {
+  background-color: var(--primary);
+  padding-block: 10px;
+  font-size: 20px;
+  border-radius: 10px 10px 0px 0px;
+}
+
+.player {
+  margin: 10px;
+  width: 280px;
+  height: 300px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  background-color: var(--primary-dark)
+}
+
+.action {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-grow: 1;
+  margin-top: 4rem;
+  color: var(--primary-light);
+}
+
+.round-btn {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  border: solid 2px #1a1a1a;
+  cursor: pointer;
+  margin: 20px;
+}
+
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.8); 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-content {
+  padding: 20px;
+  border-radius: 8px;
+  text-align: center;
+}
+
+.modal-content button {
+  background-color: var(--primary);
+  color: white;
+  border: none;
+  padding: 20px;
+  font-size: 20px;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: 0.3s;
+}
+
+.modal-content button:hover {
+  transition: 0.3s;
+  color: white;
+  background-color: var(--primary-light);
+}
