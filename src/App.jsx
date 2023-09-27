@@ -130,7 +130,6 @@ function App() {
         <ActionButton action="paper" onActionSelected={onActionSelected} disabled={gameOver} />
         <ActionButton action="scissors" onActionSelected={onActionSelected} disabled={gameOver} />
       </div>
-      {gameOver && <button onClick={playAgain}>Jogar Novamente</button>}
       {gameOver && <Modal onPlayAgain={playAgain} />}
     </>
   )
